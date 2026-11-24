@@ -1,0 +1,170 @@
+{
+  "success": true,
+  "query": "Football lovers in Washington DC in USA",
+  "total_prospects": 2,
+  "prospects": [
+    {
+      "name": "Kickoff DC Supporters Club",
+      "location": "Washington DC, USA",
+      "entity_type": "individual",
+      "social_link": [
+        {
+          "platform": "Google",
+          "link": "https://www.kickoff-dc.org/"
+        },
+        {
+          "platform": "Facebook",
+          "link": "https://www.facebook.com/dckickoffclub"
+        },
+        {
+          "platform": "Instagram",
+          "link": "https://www.instagram.com/dckickofffans/"
+        },
+        {
+          "platform": "Email",
+          "link": "mailto:hello@kickoff-dc.org"
+        },
+        {
+          "platform": "WhatsApp",
+          "link": "https://wa.me/12024561111"
+        },
+        {
+          "platform": "Phone",
+          "link": "tel:+12024561111"
+        }
+      ],
+      "relevance": {
+        "score": 0.95,
+        "interest_match": true,
+        "location_match": true,
+        "method": "llm",
+        "evidence": [
+          "interest: \"football\"",
+          "location: \"Washington DC\""
+        ]
+      }
+    },
+    {
+      "name": "Jane Roe",
+      "location": "Washington DC, USA",
+      "entity_type": "individual",
+      "social_link": [
+        {
+          "platform": "Instagram",
+          "link": "https://www.instagram.com/janeroe.dc/"
+        },
+        {
+          "platform": "X",
+          "link": "https://x.com/janeroe_dc"
+        },
+        {
+          "platform": "Threads",
+          "link": "https://www.threads.com/@janeroe.dc"
+        },
+        {
+          "platform": "Email",
+          "link": "mailto:jane.roe.dc@mailbox-demo.org"
+        }
+      ],
+      "relevance": {
+        "score": 0.95,
+        "interest_match": true,
+        "location_match": true,
+        "method": "llm",
+        "evidence": [
+          "interest: \"football\"",
+          "location: \"Washington DC\""
+        ]
+      }
+    }
+  ],
+  "intent": {
+    "interest": "Football",
+    "audience": "Football lovers",
+    "location": {
+      "city": "Washington DC",
+      "state": "District of Columbia",
+      "country": "USA",
+      "country_code": "us"
+    },
+    "target_type": "individual",
+    "keywords": [
+      "Football",
+      "NFL",
+      "soccer"
+    ],
+    "role_terms": [
+      "fan",
+      "lover"
+    ],
+    "location_aliases": [
+      "Washington DC",
+      "Washington, D.C.",
+      "DC",
+      "DMV"
+    ],
+    "source": "llm"
+  },
+  "platforms": [
+    {
+      "platform": "Google",
+      "status": "ok",
+      "profiles_found": 1,
+      "detail": null
+    },
+    {
+      "platform": "LinkedIn",
+      "status": "ok",
+      "profiles_found": 1,
+      "detail": null
+    },
+    {
+      "platform": "Facebook",
+      "status": "ok",
+      "profiles_found": 1,
+      "detail": null
+    },
+    {
+      "platform": "Instagram",
+      "status": "ok",
+      "profiles_found": 3,
+      "detail": null
+    },
+    {
+      "platform": "X",
+      "status": "ok",
+      "profiles_found": 1,
+      "detail": null
+    },
+    {
+      "platform": "YouTube",
+      "status": "ok",
+      "profiles_found": 0,
+      "detail": "web search fallback"
+    },
+    {
+      "platform": "Threads",
+      "status": "ok",
+      "profiles_found": 1,
+      "detail": null
+    },
+    {
+      "platform": "Email",
+      "status": "ok",
+      "profiles_found": 2,
+      "detail": null
+    },
+    {
+      "platform": "WhatsApp",
+      "status": "ok",
+      "profiles_found": 1,
+      "detail": null
+    },
+    {
+      "platform": "Phone",
+      "status": "ok",
+      "profiles_found": 1,
+      "detail": "extracted from public pages and bios"
+    }
+  ]
+}
