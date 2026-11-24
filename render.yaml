@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: ai-prospect-discovery
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      # Render's proxy sets X-Forwarded-For; the container is only reachable through it.
+      - key: FORWARDED_ALLOW_IPS
+        value: "*"
+      - key: SEARCH_PROVIDER
+        value: serper
+      - key: LLM_PROVIDER
+        value: anthropic
+      - key: LLM_MODEL
+        value: claude-haiku-5-5
+      - key: LLM_FALLBACK_PROVIDER
+        value: openai
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "10"
+      - key: SERPER_API_KEY
+        sync: false
+      - key: YOUTUBE_API_KEY
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: API_AUTH_TOKEN
+        sync: false

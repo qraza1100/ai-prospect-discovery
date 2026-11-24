@@ -1,0 +1,46 @@
+[project]
+name = "ai-prospect-discovery"
+version = "1.0.0"
+description = "FastAPI service that discovers public prospect profiles across platforms from a natural-language query."
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "SIM", "RUF", "ASYNC", "PL", "C4"]
+ignore = [
+    "PLR0911", "PLR0912", "PLR0913", "PLR0915", "PLR2004",
+    "S101",
+    "E501",
+    "RUF001", "RUF002", "RUF003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S", "PLR", "PLC0415"]
+"scripts/**" = ["S", "T201"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+plugins = ["pydantic.mypy"]
+exclude = ["tests/", "scripts/"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "-q"
+filterwarnings = ["error::pytest.PytestUnraisableExceptionWarning"]
+
+[tool.coverage.run]
+source = ["app"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
